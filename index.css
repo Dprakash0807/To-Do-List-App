@@ -1,0 +1,126 @@
+/* for screen*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+   
+/* for background*/
+.cont {
+    width: 100%;
+    min-height: 100vh;
+   /* background: linear-gradient(135deg, #153677, #4e085f);*/
+   background-image: url(images.jpg);
+    padding: 10px;
+}
+
+/*for icon side square */
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    /*background: white;*/
+    background: transparent;
+    margin: 100px auto 20px;
+    /* first for top secound left right auto third is bottom*/
+    padding: 40px 30px 70px;
+    /* first for top secound left right auto third is bottom*/
+    border-radius: 10px;
+    /*kornal side round*/
+}
+
+/* for h2 */
+.todo-app h2 {
+    color: black;
+    display: flex;
+    /*align to image*/
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* h2 img*/
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* input tag*/
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+/* input*/
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+/*button*/
+button{
+	border: none;
+	outline: none;
+	padding: 16px 50px;
+	background: #ff9545;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 40px;
+}
+/*ul and li item*/
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding:  12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: black;
+
+}
+/* ul and li check*/
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+/* before check*/
+ul li.checked::before{
+    background-image: url(check.png);
+
+}
+/* for close tag*/
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;/* sqare o circle*/
+}
+/* for close tag hover*/
+ul li span:hover{
+    background: #edeef0;
+}
